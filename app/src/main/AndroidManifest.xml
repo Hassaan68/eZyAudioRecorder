@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-			 package="com.dimowner.audiorecorder">
+			 package="com.attaartechs.ezyaudiorecorder">
 
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -19,13 +19,13 @@
 	<application
 			android:allowBackup="false"
 			android:hardwareAccelerated="@bool/useHardwareAcceleration"
-			android:name="com.dimowner.audiorecorder.ARApplication"
-			android:icon="@mipmap/audio_recorder_logo"
-			android:roundIcon="@mipmap/audio_recorder_logo"
+			android:name="com.attaartechs.ezyaudiorecorder.ARApplication"
+			android:icon="@drawable/ap_icon"
+			android:roundIcon="@drawable/ap_icon"
 			android:label="@string/app_name"
 			android:theme="@style/AppTheme">
 
-		<activity android:name="com.dimowner.audiorecorder.app.main.MainActivity"
+		<activity android:name="com.attaartechs.ezyaudiorecorder.app.main.MainActivity"
 					 android:launchMode= "singleTask"
 					 android:screenOrientation="portrait">
 			<intent-filter>
@@ -35,25 +35,25 @@
 			</intent-filter>
 		</activity>
 
-		<activity android:name="com.dimowner.audiorecorder.app.records.RecordsActivity"
+		<activity android:name="com.attaartechs.ezyaudiorecorder.app.records.RecordsActivity"
 					 android:screenOrientation="portrait"/>
-		<activity android:name="com.dimowner.audiorecorder.app.settings.SettingsActivity"
+		<activity android:name="com.attaartechs.ezyaudiorecorder.app.settings.SettingsActivity"
 					 android:screenOrientation="portrait"/>
-		<activity android:name="com.dimowner.audiorecorder.app.info.ActivityInformation"
+		<activity android:name="com.attaartechs.ezyaudiorecorder.app.info.ActivityInformation"
 					 android:screenOrientation="portrait"/>
 
-		<service android:name="com.dimowner.audiorecorder.app.RecordingService" />
-		<service android:name="com.dimowner.audiorecorder.app.PlaybackService" />
+		<service android:name="com.attaartechs.ezyaudiorecorder.app.RecordingService" />
+		<service android:name="com.attaartechs.ezyaudiorecorder.app.PlaybackService" />
 
 	    <!--<meta-data-->
             <!--android:name="io.fabric.ApiKey"-->
             <!--android:value="" />-->
 
-		<receiver android:name=".app.RecordingService$StopRecordingReceiver" />
-		<receiver android:name=".app.PlaybackService$StopPlaybackReceiver" />
+		<receiver android:name="com.attaartechs.ezyaudiorecorder.app.RecordingService$StopRecordingReceiver" />
+		<receiver android:name="com.attaartechs.ezyaudiorecorder.app.PlaybackService$StopPlaybackReceiver" />
 
 		<provider
-				android:name=".AppFileProvider"
+				android:name="com.attaartechs.ezyaudiorecorder.AppFileProvider"
 				android:authorities="${applicationId}.app_file_provider"
 				android:exported="false"
 				android:grantUriPermissions="true">

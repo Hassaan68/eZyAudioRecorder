@@ -15,8 +15,8 @@
 			android:contentDescription="@null"
 			android:layout_gravity="center_vertical"
 			android:layout_margin="@dimen/spacing_normal"
-			android:scaleType="center"
-			android:src="@mipmap/audio_recorder_logo"/>
+			android:scaleType="fitXY"
+			android:src="@drawable/ap_icon"/>
 
 
 	<LinearLayout

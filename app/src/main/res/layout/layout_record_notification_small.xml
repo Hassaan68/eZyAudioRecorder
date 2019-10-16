@@ -12,13 +12,12 @@
 	<ImageButton
 			android:layout_width="@dimen/bottom_pnl_small_btn_size"
 			android:layout_height="@dimen/bottom_pnl_small_btn_size"
-			android:adjustViewBounds="true"
 			android:background="?android:selectableItemBackgroundBorderless"
 			android:contentDescription="@null"
+		    android:scaleType="fitXY"
 			android:layout_gravity="center_vertical"
 			android:layout_margin="@dimen/spacing_small"
-			android:scaleType="center"
-			android:src="@mipmap/audio_recorder_logo"/>
+			android:src="@drawable/ap_icon"/>
 
 	<LinearLayout
 			android:layout_width="0dp"

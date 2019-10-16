@@ -1,6 +1,7 @@
 <resources>
 	<!--<string name="app_name">Audio Recorder</string>-->
-	<string name="app_name">Аудіо Рекордер</string>
+	<string name="app_name">AudioRecorder</string>
+	<string name="id_ezy_audio_recorder">eZy Audio Recorder</string>
 
 	<string name="records">Записи</string>
 	<string name="settings">Налаштування</string>

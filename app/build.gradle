@@ -30,11 +30,11 @@ android {
 	compileSdkVersion versions.targetSdkVersion
 	buildToolsVersion versions.buildtools
 	defaultConfig {
-		applicationId "com.dimowner.audiorecorder"
+		applicationId "com.attaartechs.ezyaudiorecorder"
 		minSdkVersion versions.minSdkVersion
 		targetSdkVersion versions.targetSdkVersion
-		versionCode versionMajor * 10000 + versionMinor * 100 + versionPatch
-		versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+		versionCode 1
+		versionName "1.0"
 //		vectorDrawables.useSupportLibrary = true
 	}
 
@@ -74,7 +74,7 @@ android {
 	productFlavors {
 		debugConfig {
 			dimension "default"
-			applicationId "com.dimowner.audiorecorder.debug"
+			applicationId "com.attaartechs.ezyaudiorecorder.debug"
 			minSdkVersion versions.minSdkVersion
 			targetSdkVersion versions.targetSdkVersion
 			signingConfig = signingConfigs.dev
@@ -82,7 +82,7 @@ android {
 		releaseConfig {
 			dimension "default"
 			signingConfig = signingConfigs.dev
-			applicationId "com.dimowner.audiorecorder"
+			applicationId "com.attaartechs.ezyaudiorecorder"
 			minSdkVersion versions.minSdkVersion
 			targetSdkVersion versions.targetSdkVersion
 		}

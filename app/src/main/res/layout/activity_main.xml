@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~  Copyright 2018 Dmitriy Ponomarenko
-  ~
-  ~  Licensed under the Apache License, Version 2.0 (the "License");
-  ~  you may not use this file except in compliance with the License.
-  ~  You may obtain a copy of the License at
-  ~
-  ~     http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~  Unless required by applicable law or agreed to in writing, software
-  ~  distributed under the License is distributed on an "AS IS" BASIS,
-  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~  See the License for the specific language governing permissions and
-  ~  limitations under the License.
-  -->
+
 
 <LinearLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,7 +7,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:orientation="vertical"
-		tools:context="com.dimowner.audiorecorder.app.main.MainActivity">
+		tools:context="com.attaartechs.ezyaudiorecorder.app.main.MainActivity">
 
 	<LinearLayout
 			android:id="@+id/toolbar"
@@ -49,9 +35,9 @@
 				android:layout_marginTop="@dimen/spacing_xsmall"
 				android:layout_marginBottom="@dimen/spacing_normal"
 				android:textColor="@color/text_primary_light"
-				android:textSize="@dimen/text_xlarge"
+				android:textSize="20dp"
 				android:textStyle="bold"
-				android:text="@string/app_name"/>
+				android:text="@string/id_ezy_audio_recorder"/>
 
 		<ImageButton
 				android:id="@+id/btn_share"
@@ -131,7 +117,7 @@
 				android:layout_gravity="center"
 				>
 
-			<com.dimowner.audiorecorder.app.widget.WaveformView
+			<com.attaartechs.ezyaudiorecorder.app.widget.WaveformView
 					android:id="@+id/record"
 					android:layout_width="wrap_content"
 					android:layout_height="@dimen/waveform_height"
